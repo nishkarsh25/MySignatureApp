@@ -603,6 +603,10 @@ video {
   display: flex;
 }
 
+.contents {
+  display: contents;
+}
+
 .w-1\/4 {
   width: 25%;
 }

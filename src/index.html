@@ -114,6 +114,18 @@
             link.click();
         });
 
+        // Add event listener for the retrieve button
+        retrieveButton.addEventListener('click', () => {
+            // Retrieve the saved canvas contents from local storage
+            let savedCanvas = localStorage.getItem('canvasContents');
+
+            if (savedCanvas) {
+                let img = new Image();
+                img.src = savedCanvas;
+                ctx.drawImage(img, 0, 0);
+            }
+        });
+
 
 
     </script>
