@@ -51,6 +51,15 @@
         const clearButton = document.getElementById('clearButton');
         const saveButton = document.getElementById('saveButton');
         const fontSizePicker = document.getElementById('fontSizePicker');
+
+        const ctx = canvas.getContext('2d');
+
+        colorPicker.addEventListener('change', (event) => {
+            ctx.fillStyle = event.target.value;
+            ctx.strokeStyle = event.target.value;
+        });
+
+        
     </script>
 </body>
 </html>
