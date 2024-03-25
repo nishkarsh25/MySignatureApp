@@ -7,6 +7,28 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 >hi</h1>
+    <div class="container mx-auto mt-12">
+        <div class="flex justify-between mb-8 space-x-4">
+            <div class="w-1/4">
+                <p class="text-center">Text color picker</p>
+                <input class="block mx-auto w-full" type="color" id="colorPicker">
+            </div>
+            <div class="w-1/4">
+                <p class="text-center">Background</p>
+                <input class="block mx-auto w-full" type="color" id="canvasColor">
+            </div>
+            <div class="w-1/4">
+                <p class="text-center">Font size</p>
+                <select class="block mx-auto w-full border border-gray-300 rounded-md" type="select" id="fontSizePicker">
+                    <option value="5">5px</option>
+                    <option value="10">10px</option>
+                    <option value="20">20px</option>
+                    <option value="30">30px</option>
+                    <option value="40">40px</option>
+                    <option value="50">50px</option>
+                </select>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
