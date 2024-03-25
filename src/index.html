@@ -100,6 +100,21 @@
             ctx.clearRect(0, 0, canvas.width, canvas.height);
         })
 
+        // Add event listener for the save button
+        saveButton.addEventListener('click', () => {
+            localStorage.setItem('canvasContents', canvas.toDataURL());
+            // Create a new <a> element
+            let link = document.createElement('a');
+
+            // Set the download attribute and the href attribute of the <a> element
+            link.download = 'my-canvas.png';
+            link.href = canvas.toDataURL();
+
+            // Dispatch a click event on the <a> element
+            link.click();
+        });
+
+
 
     </script>
 </body>
