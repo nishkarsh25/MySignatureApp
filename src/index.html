@@ -89,7 +89,11 @@
         canvas.addEventListener('mouseup', () => {
             isDrawing = false;
         });
-
+        
+        fontSizePicker.addEventListener('change', (event) => {
+            ctx.lineWidth = event.target.value;
+            // ctx.font = `${fontPicker.value} ${event.target.value}px`;
+        });
 
     </script>
 </body>
