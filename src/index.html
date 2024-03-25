@@ -95,6 +95,12 @@
             // ctx.font = `${fontPicker.value} ${event.target.value}px`;
         });
 
+        clearButton.addEventListener('click', () => {
+            // Clear the canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        })
+
+
     </script>
 </body>
 </html>
