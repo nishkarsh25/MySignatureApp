@@ -64,6 +64,12 @@
             ctx.fillRect(0, 0, 800, 500);
         });
 
+        canvas.addEventListener('mousedown', (event) => {
+            isDrawing = true;
+            lastX = event.offsetX;
+            lastY = event.offsetY;
+        });
+
 
     </script>
 </body>
